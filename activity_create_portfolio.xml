@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d76e6e"
+    tools:context=".CreatePortfolio">
+
+    <TextView
+        android:id="@+id/head1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Personalize your Portfolio!"
+        android:textColor="#f5f5dc"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/photo"
+        android:textStyle="bold"
+        android:clickable="true"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/logoImg"
+        android:background="@drawable/unedittext"
+        android:fontFamily="serif"
+        android:hint="Company Name"
+        android:padding="8dp"
+        android:textColor="#f5f5dc"
+        android:textColorHint="#f5f5dc" />
+
+    <Button
+        android:id="@+id/upLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@+id/logoImg"
+        android:background="@drawable/shape"
+        android:fontFamily=""
+        android:padding="7dp"
+        android:text="Upload Your logo"
+        android:textColor="#f5f5dc"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upLogo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/unedittext"
+        android:hint="Phone number"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textColor="#f5f5dc"
+        android:textColorHint="#f5f5dc" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/unedittext"
+        android:hint="Enter your Location"
+        android:padding="5dp"
+        android:textColor="#f5f5dc"
+        android:textColorHint="#f5f5dc" />
+
+    <EditText
+        android:id="@+id/weblinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/unedittext"
+        android:hint="Enter Links to your Socail Media Accounts"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:textColor="#f5f5dc"
+        android:textColorHint="#f5f5dc" />
+
+    <EditText
+        android:id="@+id/packages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weblinks"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/unedittext"
+        android:hint="Packages"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:textColor="#f5f5dc"
+        android:textColorHint="#f5f5dc" />
+
+    <LinearLayout
+        android:id="@+id/uploadimages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/packages"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/sample1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@drawable/sample"
+            android:clickable="true" />
+        <ImageView
+            android:id="@+id/sample2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@drawable/sample"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/sample3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@drawable/sample"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uploadimages"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_bar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/shape"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:text="SAVE"
+        android:textColor="#f5f5dc"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

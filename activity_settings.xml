@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_launcher_background"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_below="@id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#f5f5dc"
+        android:textSize="30dp"
+        android:text="Wlecome"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:text="CHANGE PASSWORD"
+        android:textColor="#f5f5dc"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:id="@+id/changepassword"
+        android:textSize="18dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/changepassword"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:text="CHANGE EMAIL"
+        android:textColor="#f5f5dc"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:id="@+id/changeemail"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/deleteaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changepassword"
+        android:layout_alignLeft="@+id/changepassword"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shape"
+        android:padding="10dp"
+        android:text="DELTE ACCOUNT"
+        android:textColor="#f5f5dc"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changepassword"
+        android:layout_alignLeft="@id/changeemail"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/deleteaccount"
+        android:background="@drawable/shape"
+        android:padding="10dp"
+        android:text="LOG OUT"
+        android:textColor="#f5f5dc"
+        android:textSize="18dp" />
+
+    <FrameLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/deleteaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/framelayout"></FrameLayout>
+</RelativeLayout>

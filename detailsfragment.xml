@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d76e6e"
+    android:padding="2dp">
+
+    <!-- For Num-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone No:"
+        android:id="@+id/num1"
+        android:textSize="30dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#f5f5dc"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/unedittext"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/num2"
+        android:layout_toRightOf="@id/num1"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#f5f5dc"
+        android:layout_marginTop="5dp"
+        android:text="hjadshasbvjhavsbhjadsvhgasvdhasvdghvashdgvasgh"
+        android:layout_alignTop="@id/num1"
+        />
+
+    <!-- For Location-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:id="@+id/loc1"
+        android:textSize="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/num2"
+        android:textColor="#f5f5dc"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/unedittext"
+        />
+
+    <TextView
+        android:id="@+id/loc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/num1"
+        android:text="adshjdashjbsadjfkhbadhvdhasvhjavssahvasvdghsa"
+        android:textColor="#f5f5dc"
+        android:textSize="20dp"
+        android:layout_alignTop="@id/loc1"/>
+
+    <!-- For Weblinks-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weblinks:"
+        android:id="@+id/web1"
+        android:textSize="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/loc2"
+        android:textColor="#f5f5dc"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/unedittext"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/web2"
+        android:layout_toRightOf="@id/num1"
+        android:layout_below="@id/loc2"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#f5f5dc"
+        android:text="ahfvhavdghvsghvahgsvaghsvashgvhas"
+        android:layout_marginTop="5dp"
+        android:layout_alignTop="@id/web1"
+        />
+
+    <!-- For Packages-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Packages:"
+        android:id="@+id/pack1"
+        android:textSize="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/web2"
+        android:textColor="#f5f5dc"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/unedittext"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pack2"
+        android:layout_toRightOf="@id/num1"
+        android:layout_below="@id/web2"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#f5f5dc"
+        android:text="ashbdjasbhjadsvbhjavsdjasdhgsavhgsa"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@id/pack1"
+        />
+
+
+</RelativeLayout>
